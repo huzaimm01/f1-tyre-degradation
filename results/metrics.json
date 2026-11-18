@@ -1,0 +1,17 @@
+{
+  "race": "2024 Monza",
+  "target": "corrected",
+  "laps_train": 728,
+  "laps_test": 199,
+  "stints_train": 37,
+  "stints_test": 13,
+  "mae_seconds": {
+    "Mean baseline": 0.637,
+    "Linear regression": 0.6,
+    "Neural network": 0.621
+  },
+  "degradation_seconds_per_lap": {
+    "HARD": 0.0322,
+    "MEDIUM": 0.0021
+  }
+}
