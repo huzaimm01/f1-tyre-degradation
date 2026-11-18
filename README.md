@@ -1,3 +1,5 @@
+[![tests](https://github.com/huzaimm01/f1-tyre-degradation/actions/workflows/ci.yml/badge.svg)](https://github.com/huzaimm01/f1-tyre-degradation/actions/workflows/ci.yml)
+
 # F1 Tyre Degradation Model
 
 How much slower does an F1 car get as its tyres wear? This project predicts lap time from tyre age and compound using real race data from [tif1](https://tif1.tracinginsights.com/) — timing data generated with FastF1 and published as static files, so no F1TV account is needed — and compares a small neural network against two simpler baselines.
