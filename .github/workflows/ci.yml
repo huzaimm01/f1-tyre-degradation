@@ -1,0 +1,14 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      # The tests only cover data cleaning and feature code, so TensorFlow and
+      # tif1 are not installed here.
+      - run: pip install pandas numpy scikit-learn matplotlib pytest
+      - run: python -m pytest -q
